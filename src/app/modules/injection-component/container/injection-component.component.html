@@ -1,0 +1,14 @@
+<app-ui-chess-quote [title]="'Injecting component/component'"></app-ui-chess-quote>
+
+<app-ui-chess-quote
+  #uiChessQuote
+  [title]="'Using ViewChild to access uiCheessQuoteComponent\'s method'"
+  [showRibbon]="true">
+  <button (click)="nextQuote()">Next</button>
+</app-ui-chess-quote>
+
+<app-ui-chess-quote
+  [title]="'Injecting  directive/component'"
+  [showRibbon]="true">
+  <button appUiChessQuoteNext>Next</button>
+</app-ui-chess-quote>

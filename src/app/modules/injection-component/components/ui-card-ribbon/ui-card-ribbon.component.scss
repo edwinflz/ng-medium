@@ -1,0 +1,20 @@
+.ui-card-ribbon {
+  display: block;
+  width: auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  background-color: red;
+  color: white;
+  border: 2px solid red;
+  border-radius: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 14px;
+  &__wrapper {
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 12px 36px;
+    text-align: center;
+  }
+}
