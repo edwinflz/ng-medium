@@ -1,0 +1,99 @@
+<mat-grid-list [formGroup]="form" (ngSubmit)="something()" [cols]="breakPointObserver$ | async" rowHeight="80px">
+  <mat-grid-tile [colspan]="1" [rowspan]="1">
+    <mat-form-field appearance="outline" class="example-full-width">
+      <mat-label>Nombre</mat-label>
+      <input matInput placeholder="Nombre" formControlName="payerName">
+      <mat-icon matSuffix>face</mat-icon>
+    </mat-form-field>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="1" [rowspan]="1">
+    <mat-form-field appearance="outline" class="example-full-width">
+      <mat-label>Apellido(s)</mat-label>
+      <input matInput placeholder="Apellido" formControlName="payerlastName">
+      <mat-icon matSuffix>perm_identity</mat-icon>
+      <!-- <mat-hint>Hint</mat-hint> -->
+    </mat-form-field>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="(breakPointObserver$ | async) === 1 ? 1 : 2" [rowspan]="1">
+    <mat-form-field appearance="outline" class="example-full-width">
+      <mat-label>Dirección de facturación</mat-label>
+      <input matInput placeholder="Ingrese dirección exacta" formControlName="address">
+      <mat-icon matSuffix>gite</mat-icon>
+      <!-- <mat-hint>Hint</mat-hint> -->
+    </mat-form-field>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="1" [rowspan]="1">
+    <mat-form-field appearance="outline" class="example-full-width">
+      <mat-label>Pais de Facturación</mat-label>
+      <mat-select formControlName="country">
+        <mat-option value="one">First option</mat-option>
+        <mat-option value="two">Second option</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <!-- <mat-hint>Hint</mat-hint> -->
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="1" [rowspan]="1">
+    <mat-form-field appearance="outline" class="example-full-width">
+      <mat-label>Estado (provincia o Departamento)</mat-label>
+      <input matInput placeholder="Ingrese el estado" formControlName="state">
+      <mat-icon matSuffix>location_pin</mat-icon>
+      <!-- <mat-hint>Hint</mat-hint> -->
+    </mat-form-field>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="1" [rowspan]="1">
+    <mat-form-field appearance="outline" class="example-full-width">
+      <mat-label>Correo Electronico</mat-label>
+      <input matInput placeholder="Ingrese el estado" formControlName="payerEmail">
+      <mat-icon matSuffix>email</mat-icon>
+      <!-- <mat-hint>Hint</mat-hint> -->
+    </mat-form-field>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="1" [rowspan]="1">
+    <mat-form-field appearance="outline" class="example-full-width">
+      <mat-label>Código postal (Zip Code)</mat-label>
+      <input matInput placeholder="Ingrese el estado" formControlName="postalCode">
+      <mat-icon matSuffix>broadcast_on_personal</mat-icon>
+      <!-- <mat-hint>Hint</mat-hint> -->
+    </mat-form-field>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="1" [rowspan]="1">
+    <mat-form-field appearance="outline" class="example-full-width">
+      <mat-label>Número de tarjeta</mat-label>
+      <input matInput placeholder="Ingrese el estado" formControlName="cardNumber">
+      <mat-icon matSuffix>credit_card</mat-icon>
+      <!-- <mat-hint>Hint</mat-hint> -->
+    </mat-form-field>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="1" [rowspan]="1">
+    <mat-form-field appearance="outline" class="example-full-width">
+      <mat-label>Fecha de vencimiento</mat-label>
+      <input matInput placeholder="Ingrese el estado" formControlName="expiredDate">
+      <mat-icon matSuffix>event_available</mat-icon>
+      <!-- <mat-hint>Hint</mat-hint> -->
+    </mat-form-field>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="1" [rowspan]="1">
+    <mat-form-field appearance="outline" class="example-full-width">
+      <mat-label>Código de seguridad</mat-label>
+      <input matInput placeholder="Ingrese el estado" formControlName="maskedCVV">
+      <mat-icon matSuffix>wallet</mat-icon>
+      <!-- <mat-hint>Hint</mat-hint> -->
+    </mat-form-field>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="1" [rowspan]="1">
+    <mat-form-field appearance="outline" class="example-full-width">
+      <mat-label>Número de cédula</mat-label>
+      <input matInput placeholder="Ingrese el estado" formControlName="payerDocument">
+      <mat-icon matSuffix>contact_mail</mat-icon>
+      <!-- <mat-hint>Hint</mat-hint> -->
+    </mat-form-field>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="1" [rowspan]="1">
+    <button mat-raised-button color="primary" type="submit">GUARDAR</button>
+    <button mat-raised-button color="accent" class="ml-5" type="button" (click)="clear()">LIMPIAR</button>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<pre>
+  {{form?.value | json}}
+</pre>
