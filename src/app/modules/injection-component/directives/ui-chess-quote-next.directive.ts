@@ -1,5 +1,5 @@
 import { Directive, Host, HostListener } from '@angular/core';
-import { UiChessQuoteComponent } from '../components/ui-chess-quote/ui-chess-quote.component';
+import { UiChessQuoteComponent } from '@injection-component/components/ui-chess-quote/ui-chess-quote.component';
 
 @Directive({
   selector: '[appUiChessQuoteNext]',

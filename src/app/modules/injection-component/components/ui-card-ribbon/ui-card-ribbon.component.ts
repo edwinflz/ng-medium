@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, Host } from '@angular/core';
-import { UiCardComponent } from '../ui-card/ui-card.component';
+import { UiCardComponent } from '@injection-component/components/ui-card/ui-card.component';
 
 @Component({
   selector: 'app-ui-card-ribbon',

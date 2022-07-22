@@ -25,6 +25,10 @@
     "paths": {
       "@app/*": ["src/app/*"],
       "@modules/*": ["src/app/modules/*"],
+      "@reactive-form-advanced/*": ["src/app/modules/reactive-form-advanced/*"],
+      "@interceptors-examples/*": ["src/app/modules/interceptors-examples/*"],
+      "@injection-component/*": ["src/app/modules/injection-component/*"],
+      "@angular-basics/*": ["src/app/modules/angular-basics/*"],
     }
   },
   "angularCompilerOptions": {

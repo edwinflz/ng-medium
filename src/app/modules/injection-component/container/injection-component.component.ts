@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, ViewChild } from '@angular/core';
-import { UiChessQuoteComponent } from '../components/ui-chess-quote/ui-chess-quote.component';
+import { UiChessQuoteComponent } from '@injection-component/components/ui-chess-quote/ui-chess-quote.component';
 
 @Component({
   selector: 'app-injection-component',

@@ -4,4 +4,12 @@ import { Component } from '@angular/core';
   selector: 'app-angular-basics',
   templateUrl: './angular-basics.component.html',
 })
-export class AngularBasicsComponent  {}
+export class AngularBasicsComponent  {
+
+  isCartVisible = false;
+
+  toggleCartVisibility(): void {
+    this.isCartVisible = !this.isCartVisible;
+  }
+
+}

@@ -1,12 +1,13 @@
 import { Component, Host, Input, OnInit } from '@angular/core';
 import { AbstractControl } from '@angular/forms';
-import { ContainerErrorsFormComponent } from '../container-errors-form/container-errors-form.component';
+import {
+  ContainerErrorsFormComponent
+} from '@reactive-form-advanced/components/container-errors-form/container-errors-form.component';
 import { errorsDictionary } from './constants/dictionary-errors.constant';
 
 @Component({
   selector: 'app-message-errors-form',
   templateUrl: './message-errors-form.component.html',
-  styleUrls: ['./message-errors-form.component.scss'],
 })
 export class MessageErrorsFormComponent implements OnInit {
 

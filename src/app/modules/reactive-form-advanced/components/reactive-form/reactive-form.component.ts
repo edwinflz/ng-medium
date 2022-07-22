@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
-
-import { BreakPointsService } from '../../service/break-points.service';
 import { Observable } from 'rxjs';
+
+import { BreakPointsService } from '@reactive-form-advanced/service/break-points.service';
 import { expiredCardDateValidator } from './validators/expired-card-date.validator';
 import { REGEX } from './constants/regex.contants';
 
