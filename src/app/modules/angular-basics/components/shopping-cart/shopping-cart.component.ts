@@ -1,25 +1,19 @@
-import { Component, OnInit } from '@angular/core';
-import { CartItem } from '@angular-basics/interfaces/cart-item.interface';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
-import { ShoppingCartService } from '@angular-basics/services/shopping-cart.service';
+import { CartItem } from '@angular-basics/core/interfaces/cart-item.interface';
+import { ShoppingCartService } from '@angular-basics/core/services/shopping-cart.service';
 @Component({
   selector: 'app-shopping-cart',
   templateUrl: './shopping-cart.component.html',
-  styleUrls: ['./shopping-cart.component.scss']
+  styleUrls: ['./shopping-cart.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ShoppingCartComponent implements OnInit {
+export class ShoppingCartComponent {
+
+  cartItems$ = this.shoppingcartService.items$;
+  total$ = this.shoppingcartService.total$;
 
   constructor(private shoppingcartService: ShoppingCartService) {}
-
-  ngOnInit(): void {}
-
-  get cartItems(): CartItem[] {
-    return this.shoppingcartService.items;
-  }
-
-  get total(): number {
-    return this.shoppingcartService.total;
-  }
 
   deleteItem(itemToDelete: CartItem): void {
     this.shoppingcartService.deleteItem(itemToDelete);

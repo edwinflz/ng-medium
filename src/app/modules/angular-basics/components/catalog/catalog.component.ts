@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
-import { Product } from '@angular-basics/interfaces/product.interface';
-import { CatalogService } from '@angular-basics/services/catalog.service';
+import { Product } from '@app/modules/angular-basics/core/interfaces/product.interface';
+import { CatalogService } from '@app/modules/angular-basics/core/services/catalog.service';
 
 @Component({
   selector: 'app-catalog',

@@ -1,25 +1,27 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { ShoppingCartService } from '@angular-basics/services/shopping-cart.service';
+import { ChangeDetectionStrategy, Component, EventEmitter, Output } from '@angular/core';
+import { ShoppingCartService } from '@app/modules/angular-basics/core/services/shopping-cart.service';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent  {
 
   @Output() toggleCartVisibility = new EventEmitter<void>();
+  @Output() toggleMenu = new EventEmitter<void>();
 
-  constructor(private shoppingCartService: ShoppingCartService) {}
+  itemsCount$ = this.scService.itemsCount$;
 
-  get itemsCount(): number {
-    return this.shoppingCartService.itemsCount;
-  }
-
-  ngOnInit(): void {}
+  constructor(private scService: ShoppingCartService) {}
 
   onCartClicked(): void {
     this.toggleCartVisibility.emit();
+  }
+
+  onMenuClicked(): void {
+    this.toggleMenu.emit();
   }
 
 }

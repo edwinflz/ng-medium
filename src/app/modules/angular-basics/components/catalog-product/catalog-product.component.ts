@@ -1,8 +1,8 @@
 import { Component, Input } from '@angular/core';
 
-import { Product } from '@angular-basics/interfaces/product.interface';
-import { mapProductToCartItem } from '@angular-basics/helpers/map-product-to-cart-item.helper';
-import { ShoppingCartService } from '@angular-basics/services/shopping-cart.service';
+import { Product } from '@app/modules/angular-basics/core/interfaces/product.interface';
+import { mapProductToCartItem } from '@app/modules/angular-basics/core/helpers/map-product-to-cart-item.helper';
+import { ShoppingCartService } from '@app/modules/angular-basics/core/services/shopping-cart.service';
 
 @Component({
   selector: 'app-catalog-product',
