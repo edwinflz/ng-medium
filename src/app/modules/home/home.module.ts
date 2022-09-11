@@ -7,6 +7,7 @@ import { MatCardModule } from '@angular/material/card';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
+import { HomeService } from './service/home.service';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { HomeComponent } from './home.component';
     MatCardModule,
     MatDividerModule,
     MatButtonModule
-  ]
+  ],
+  providers: [HomeService],
 })
 export class HomeModule { }

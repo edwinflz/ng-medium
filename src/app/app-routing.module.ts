@@ -22,11 +22,7 @@ const routes: Routes = [
   {
     path: 'interceptors/examples',
     loadChildren: () => import('@modules/interceptors-examples/interceptors-examples.module').then(m => m.InterceptorsExamplesModule),
-  },
-  {
-    path: 'angular/basics',
-    loadChildren: () => import('@modules/angular-basics/angular-basics.module').then(m => m.AngularBasicsModule),
-  },
+  }
 ];
 
 @NgModule({

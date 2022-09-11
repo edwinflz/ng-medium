@@ -1,37 +1,17 @@
 <div class="container">
-  <mat-card class="card">
-    <mat-card-subtitle>#1</mat-card-subtitle>
-    <mat-card-title>Injection component</mat-card-title>
+  <mat-card
+    class="card"
+    *ngFor="let project of projects$ | async; let index = index">
+    <mat-card-subtitle># {{ index + 1 }}</mat-card-subtitle>
+    <mat-card-title>{{ project.title }}</mat-card-title>
     <mat-card-content>
-      <p>We can use the @Host decorator to access the parent component through DI and another features.</p>
+      <p>{{ project.description }}</p>
     </mat-card-content>
     <mat-divider inset></mat-divider>
     <mat-card-actions>
-      <button mat-raised-button color="primary" routerLink="/injection/component">GO</button>
-    </mat-card-actions>
-  </mat-card>
-
-  <mat-card class="card">
-    <mat-card-subtitle>#2</mat-card-subtitle>
-    <mat-card-title>Reactive Forms</mat-card-title>
-    <mat-card-content>
-      <p>We can build powerful forms using reactive forms feature from Angular.</p>
-    </mat-card-content>
-    <mat-divider inset></mat-divider>
-    <mat-card-actions>
-      <button mat-raised-button color="primary" routerLink="/reactive/forms/advanced">GO</button>
-    </mat-card-actions>
-  </mat-card>
-
-  <mat-card class="card">
-    <mat-card-subtitle>#3</mat-card-subtitle>
-    <mat-card-title>Angular Basics</mat-card-title>
-    <mat-card-content>
-      <p>We use diferents core themes provided by Angular to develop features/functions.</p>
-    </mat-card-content>
-    <mat-divider inset></mat-divider>
-    <mat-card-actions>
-      <button mat-raised-button color="primary" routerLink="/angular/basics">GO</button>
+      <button mat-raised-button color="primary" [routerLink]="project.link">
+        GO
+      </button>
     </mat-card-actions>
   </mat-card>
 </div>
