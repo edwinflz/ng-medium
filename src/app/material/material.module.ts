@@ -10,8 +10,10 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
-
-
+import { MatDividerModule } from '@angular/material/divider';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 @NgModule({
   imports: [CommonModule],
   exports: [
@@ -23,7 +25,11 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     LayoutModule,
     MatButtonModule,
     MatSelectModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatDividerModule,
+    MatSidenavModule,
+    MatListModule,
+    MatProgressBarModule
   ]
 })
 export class MaterialModule { }

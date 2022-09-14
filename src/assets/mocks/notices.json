@@ -1,0 +1,186 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "caption": "12 septiembre, 2022 | Vannessa Córdoba",
+      "title": "'Charlas de la tarde' en la Fiesta del Libro y la Cultura 2022",
+      "description": "Charlas de la Tarde es un espacio creado para construir contenidos de los eventos del libro de acuerdo a la temática de cada año.",
+      "img": "charlas-de-la-tarde.jpg",
+      "slug": "charla-de-la-tarde",
+      "categories": [
+        {
+          "title": "Salud",
+          "color": "#0098ff"
+        },
+        {
+          "title": "Cultura",
+          "color": "#ccda14"
+        }
+      ],
+      "isLike": false
+    },
+    {
+      "id": 2,
+      "caption": "12 septiembre, 2022 | TM Digital",
+      "title": "Portugal, país invitado a la Fiesta del Libro de Medellín",
+      "description": "Portugal es el invitado principal en la Fiesta del Libro y la Cultura de Medellín, la decisión se tomó  después de que  Colombia y ese país europeo, firmaran  un acuerdo de cooperación para los programas de cultura, educación y deporte. Alianza  que hoy, con  la apertura del evento del libro más importante del país, se hace efectiva.",
+      "img": "Fiesta-del-libro-2.jpg",
+      "slug": "portugal-invitado-principal",
+      "categories": [
+        {
+          "title": "Deporte",
+          "color": "#FF0040"
+        },
+        {
+          "title": "Cultura",
+          "color": "#ccda14"
+        }
+      ],
+      "isLike": false
+    },
+    {
+      "id": 3,
+      "caption": "12 septiembre, 2022 | Periodistas Telemedellín",
+      "title": "'El mundo es ñoño' llega a las pantallas y app de Telemedellín ",
+      "description": "Telemedellín sigue de estreno, con contenidos de calidad para todos los gustos, por eso ahora el turno es para los apasionados del mundo fantástico, con el seriado documental de viajes  'El mundo es ñoño', que se emitirá a partir des este martes 13 de septiembre desde las 10:30 de la noche. ",
+      "img": "el-mundo.png",
+      "slug": "el-mundo-llega-a-las-pantallas",
+      "categories": [
+        {
+          "title": "Internacional",
+          "color": "#12a065"
+        }
+      ],
+      "isLike": false
+    },
+    {
+      "id": 4,
+      "caption": "12 septiembre, 2022 | Vannessa Córdoba",
+      "title": "El Nadaísmo, una propuesta de la vanguardia",
+      "description": "Durante la Fiesta del Libro y la Cultura, surgen nuevos libros y con ellos escritores apasionados por la historia , esta vez el tema protagonista es el  nadaísmo.",
+      "img": "nadaismo-una-propuesta-de-vanguardia-prensa.jpg",
+      "slug": "el-nadaismo",
+      "categories": [
+        {
+          "title": "Salud",
+          "color": "#0098ff"
+        },
+        {
+          "title": "Cultura",
+          "color": "#ccda14"
+        }
+      ],
+      "isLike": false
+    },
+    {
+      "id": 5,
+      "caption": "12 septiembre, 2022 | Lina Yarce",
+      "title": "Conciertos, charlas y lanzamientos: detalles de la Fiesta del Libro este 13 de septiembre",
+      "description": "La Fiesta del Libro y la Cultura está cargada de actividades para que grandes y pequeños participen  y celebren a través de las palabras. El mares 13 de septiembre, la Fiesta tiene una amplia oferta, desde conciertos hasta charlas y lanzamientos de libros.",
+      "img": "encuentro-1.jpg",
+      "slug": "la-fiesta-del-libro",
+      "categories": [
+        {
+          "title": "Antioquia",
+          "color": "#b8980c"
+        },
+        {
+          "title": "Cultura",
+          "color": "#ccda14"
+        }
+      ],
+      "isLike": false
+    },
+    {
+      "id": 6,
+      "caption": "12 septiembre, 2022 | Periodistas Telemedellín",
+      "title": "Libros mágicos en la Fiesta del Libro y la Cultura",
+      "description": "Una editorial infantil llena de magia la Fiesta del Libro y la Cultura.  Se trata de LuaBooks, una propuesta que produce libros y combina lo físico con lo digital para despertar en los niños un gusto por la lectura de manera rápida, interactiva y entretenida.",
+      "img": "fiesta-del-libro.png",
+      "slug": "libros-magicos",
+      "categories": [
+        {
+          "title": "Salud",
+          "color": "#0098ff"
+        },
+        {
+          "title": "Entretenimiento",
+          "color": "#e4398e"
+        }
+      ],
+      "isLike": false
+    },
+    {
+      "id": 7,
+      "caption": "12 septiembre, 2022 - Lina Yarce",
+      "title": "Emprendedores de Hecho en Paz hacen presencia en Fiesta del Libro",
+      "description": "Jhon Mario hizo parte de la guerra durante 10 años, hoy en la Feria del Libro quiere contar otra historia, una que contribuya a La Paz.",
+      "img": "bazar.png",
+      "slug": "emprendedor-de-hecho",
+      "categories": [
+        {
+          "title": "Cultura",
+          "color": "#ccda14"
+        }
+      ],
+      "isLike": false
+    },
+    {
+      "id": 8,
+      "caption": "12 septiembre, 2022 - Sandra Flórez, Cultura TM",
+      "title": "Los tres mosqueteros presentes en La Fiesta del Libro y La Cultura",
+      "description": "Los personajes principales de la obra del escritor francés Alexandre Duma 'Los tres mosqueteros' se pasean por la Fiesta del Libro y la Cultura en Medellín.",
+      "img": "b05905ec-4ebe-46df-a479-7e9d125d1483.jpeg",
+      "slug": "los-tres-mosqueteros",
+      "categories": [
+        {
+          "title": "Entretenimiento",
+          "color": "#e4398e"
+        },
+        {
+          "title": "Cultura",
+          "color": "#ccda14"
+        }
+      ],
+      "isLike": false
+    },
+    {
+      "id": 9,
+      "caption": "12 septiembre, 2022 - Sandra Flórez, Cultura TM",
+      "title": "Un ratón en la Fiesta del Libro y la Cultura",
+      "description": "Entre las carpas del Jardín le lectura viva, se encuentran fundaciones, que trabajan arduamente por la promoción de lectura, la escritura y la oralidad, en la ciudad de Medellín, una de ellas es la fundación Ratón de Biblioteca, que cuenta con programación para viajar a otros mundos. ",
+      "img": "raton-1.png",
+      "slug": "un-raton-en-la-fiesta",
+      "categories": [
+        {
+          "title": "Entretenimiento",
+          "color": "#e4398e"
+        },
+        {
+          "title": "Cultura",
+          "color": "#ccda14"
+        }
+      ],
+      "isLike": false
+    },
+    {
+      "id": 10,
+      "caption": "6 septiembre, 2022 - Vannessa Córdoba",
+      "title": "Festival Estéreo Picnic anuncia sus fechas para el 2023",
+      "description": "Con un vídeo de los mejores momentos del 2022, el festival Estéreo Picnic confirma sus fechas para el 2023 con un día adicional, 23, 24, 25 y 26 de marzo serán los días para disfrutar de la versión número 12 en el campo de golf Briceño 18 en Bogotá.",
+      "img": "festival.jpg",
+      "slug": "festival-estereo-picnic",
+      "categories": [
+        {
+          "title": "Antioquia",
+          "color": "#b8980c"
+        },
+        {
+          "title": "Cultura",
+          "color": "#ccda14"
+        }
+      ],
+      "isLike": false
+    }
+  ]
+}

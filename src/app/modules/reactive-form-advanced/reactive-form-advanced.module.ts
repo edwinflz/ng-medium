@@ -7,8 +7,8 @@ import { ReactiveFormAdvancedRoutingModule } from './reactive-form-advanced-rout
 import { ReactiveFormAdvancedComponent } from './container/reactive-form-advanced.component';
 import { ReactiveFormComponent } from './components/reactive-form/reactive-form.component';
 import { BreakPointsService } from './service/break-points.service';
-import { ContainerErrorsFormComponent } from './components/container-errors-form/container-errors-form.component';
-import { MessageErrorsFormComponent } from './components/message-errors-form/message-errors-form.component';
+import { ContainerErrorsFormComponent } from './components/container-errors-form.component';
+import { MessageErrorsFormComponent } from './components/message-errors-form.component';
 
 @NgModule({
   declarations: [

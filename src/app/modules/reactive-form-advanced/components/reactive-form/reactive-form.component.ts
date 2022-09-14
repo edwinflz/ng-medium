@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 
 import { BreakPointsService } from '@reactive-form-advanced/service/break-points.service';
 import { expiredCardDateValidator } from './validators/expired-card-date.validator';
-import { REGEX } from './constants/regex.contants';
+import { REGEX } from '@reactive-form-advanced/constants/regex.contants';
 
 @Component({
   selector: 'app-reactive-form',

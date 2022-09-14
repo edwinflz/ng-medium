@@ -1,13 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { MatDividerModule } from '@angular/material/divider';
-import { MatButtonModule } from '@angular/material/button';
-import { MatCardModule } from '@angular/material/card';
-
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { HomeService } from './service/home.service';
+import { MaterialModule } from '@app/material/material.module';
 
 
 @NgModule({
@@ -17,9 +14,7 @@ import { HomeService } from './service/home.service';
   imports: [
     CommonModule,
     HomeRoutingModule,
-    MatCardModule,
-    MatDividerModule,
-    MatButtonModule
+    MaterialModule,
   ],
   providers: [HomeService],
 })
