@@ -10,7 +10,6 @@ export class LoaderService {
 
   show() {
     this.showLoader = true;
-    console.log('entro');
   }
 
   hide() {
