@@ -1,0 +1,12 @@
+mat-drawer-container {
+  height: 100%;
+}
+
+mat-list-item {
+  cursor: pointer;
+}
+
+.selected {
+  background-color: blueviolet;
+  color: white;
+}

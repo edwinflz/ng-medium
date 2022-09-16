@@ -13,5 +13,10 @@
     "title": "Interceptors Examples",
     "description": "We can see diferents ways to use interceptors in Angular",
     "link": "/interceptors/examples"
+  },
+  {
+    "title": "Pipes Examples",
+    "description": "We can see different uses of awesome pipes in Angular",
+    "link": "/pipes/examples"
   }
 ]

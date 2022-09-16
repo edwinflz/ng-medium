@@ -27,10 +27,16 @@ export class ErrorInterceptor implements HttpInterceptor {
     return next.handle(req).pipe(
       retry(2),
       catchError((error: HttpErrorResponse) => {
-        if (error.status !== 401) {
-          // 401 handled in auth.interceptor
-          this.toastr.error(error.message);
+        if (error instanceof ErrorEvent) {
+          console.log('this is an error in the code');
+        } else {
+          if (error.status !== 401) {
+            console.log('this is an error return by the server');
+            // 401 handled in auth.interceptor
+            this.toastr.error(error.message);
+          }
         }
+
         return throwError(() => error);
       })
     );

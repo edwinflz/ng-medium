@@ -29,6 +29,7 @@
       "@interceptors-examples/*": ["src/app/modules/interceptors-examples/*"],
       "@injection-component/*": ["src/app/modules/injection-component/*"],
       "@angular-basics/*": ["src/app/modules/angular-basics/*"],
+      "@pipes-examples/*": ["src/app/modules/pipes-examples/*"]
     }
   },
   "angularCompilerOptions": {

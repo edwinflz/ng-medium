@@ -13,15 +13,19 @@ const routes: Routes = [
   },
   {
     path: 'injection/component',
-    loadChildren: () => import('@modules/injection-component/injection-component.module').then(m => m.InjectionComponentModule),
+    loadChildren: () => import('@injection-component/injection-component.module').then(m => m.InjectionComponentModule),
   },
   {
     path: 'reactive/forms/advanced',
-    loadChildren: () => import('@modules/reactive-form-advanced/reactive-form-advanced.module').then(m => m.ReactiveFormAdvancedModule),
+    loadChildren: () => import('@reactive-form-advanced/reactive-form-advanced.module').then(m => m.ReactiveFormAdvancedModule),
   },
   {
     path: 'interceptors/examples',
-    loadChildren: () => import('@modules/interceptors-examples/interceptors-examples.module').then(m => m.InterceptorsExamplesModule),
+    loadChildren: () => import('@interceptors-examples/interceptors-examples.module').then(m => m.InterceptorsExamplesModule),
+  },
+  {
+    path: 'pipes/examples',
+    loadChildren: () => import('@pipes-examples/pipes-examples.module').then(m => m.PipesExamplesModule),
   }
 ];
 
